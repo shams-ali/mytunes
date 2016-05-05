@@ -7,22 +7,22 @@ var PlayerView = Backbone.View.extend({
 
   initialize: function() {
     //console.log(this);
-    //console.log(this.playerView);
-    // this.on('ended', function() {
-    //   console.log(this);
-    //   //console.log(this.play());
-    //   //this.dequeue();
-    //   this.remove(this.at(0));
-    //   this.play(this.at(0));
-    // }, this);
+    // var that = this;
+    this.$el.on('ended', function() {
+      this.model.ended();
+      // that.model.set('currentSong', )
+      // that.trigger('ended');
+      // that.render();
+      // console.log('remove: ' + this.remove());
+      // console.log(that);
+
+      //song ends
+        //
+    }.bind(this));
   },
 
   setSong: function(song) {
-    this.model = song;
-    console.log(song);
-    console.log(this);
-    console.log(this.model);
-   
+    this.model = song;  
     this.render();
   },
 

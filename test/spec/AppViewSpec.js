@@ -4,7 +4,7 @@ describe('AppView', function() {
   beforeEach(function () {
     app = new AppModel({library:
       new Songs([
-        {
+        { 
           artist: 'Fakey McFakerson',
           title: 'Never Gonna Mock You Up',
           url: 'example/url'

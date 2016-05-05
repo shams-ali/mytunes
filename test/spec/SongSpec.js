@@ -2,7 +2,7 @@ describe('SongModel', function() {
   var model;
 
   beforeEach(function() {
-    model = new SongModel({
+    model = new SongModel({ 
       artist: 'data',
       url: '/test/testsong.mp3',
       title: 'test song'
